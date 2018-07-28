@@ -5,6 +5,9 @@
 	<meta charset="UTF-8">
 	<title>Twitch VS Streamer</title>
 	<link rel="import" href="elements/tpc-chessboard/tpc-chessboard.html">
+	<link rel="import" href="elements/tpc-vote-timer/tpc-vote-timer.html">
+	<link rel="import" href="elements/tpc-logo/tpc-logo.html">
+
 	<style>
 		#container {
 			width: 1920px;
@@ -17,13 +20,28 @@
 			top: 125px;
 			left: 548px;
 		}
+
+		tpc-vote-timer{
+			position: absolute;
+			top: 344px;
+			left: 126px;
+		}
+
+		tpc-logo{
+			position: absolute;
+			top: 125px;
+			left: 126px;
+		}
 	</style>
 </head>
 
 <body>
 	<div id="container">
+		<tpc-logo></tpc-logo>
+		<tpc-vote-timer></tpc-vote-timer>
 		<tpc-chessboard></tpc-chessboard>
 	</div>
+
 </body>
 
 </html>

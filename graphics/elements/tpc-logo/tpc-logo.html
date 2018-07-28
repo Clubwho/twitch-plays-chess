@@ -1,0 +1,60 @@
+<link rel="import" href="../../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="tpc-logo">
+	<template>
+		<style>
+			#container {
+				background-color: #343434;
+				width: 392px;
+				height: 190px;
+				border: solid white 2px;
+			}
+
+			p {
+				color: white;
+				font-family: sans-serif;
+				margin: 0;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+                padding-top: 20px;
+			}
+
+			#top {
+                background-color: white;
+                height: 95px;
+            }
+            
+            #top p{
+                color: black;
+            }
+
+			#bottom {
+
+			}
+		</style>
+
+		<div id="container">
+			<div id="top">
+				<p>TWITCH</p>
+			</div>
+			<div id="bottom">
+				<p>PLAYS CHESS</p>
+			</div>
+		</div>
+	</template>
+
+	<script>
+		(function () {
+			'use strict';
+
+			class TpcLogo extends Polymer.Element {
+				static get is() {
+					return 'tpc-logo';
+				}
+			}
+
+			customElements.define(TpcLogo.is, TpcLogo);
+		})();
+	</script>
+</dom-module>

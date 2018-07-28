@@ -12,7 +12,8 @@
 
 		ready() {
 			super.ready();
-			var board = ChessBoard(this.$.board, 'start');
+			var board = ChessBoard(this.$.board);
+			board.start;
 		}
 
 	}

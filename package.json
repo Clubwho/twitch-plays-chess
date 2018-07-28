@@ -52,5 +52,14 @@
   "license": "MIT",
   "dependencies": {
     "chessboardjs": "0.0.1"
-  }
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nodecg-screenshot-tester": "^2.1.0"
+  },
+  "scripts": {
+		"test": "ava test",
+		"generate-fixture-screenshots": "generate-fixture-screenshots",
+		"debug-fixture-screenshots": "generate-fixture-screenshots --debug"
+	}
 }

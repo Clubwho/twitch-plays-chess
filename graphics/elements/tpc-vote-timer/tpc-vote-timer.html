@@ -1,0 +1,39 @@
+<link rel="import" href="../../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="tpc-vote-timer">
+	<template>
+		<style>
+            #container{
+                background-color: #343434;
+                width: 392px;
+                height: 150px;
+                border: solid #FF7D7D 2px;
+            }
+
+            p{
+                color: white;
+                font-family: sans-serif;
+                margin: 0;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            #voteText{
+                font-size: 40px;
+                padding-top: 21px;
+            }
+
+            #voteCountdown{
+                font-size: 55px;
+                padding-top: 5px;
+            }
+        </style>
+        
+		<div id="container">
+            <p id="voteText">VOTE NOW</p>
+            <p id="voteCountdown">2:00</p>
+        </div>
+	</template>
+
+	<script src="tpc-vote-timer.js"></script>
+</dom-module>
