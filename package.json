@@ -30,16 +30,27 @@
         "width": 4,
         "file": "tpc-manager.html",
         "headerColor": "#9f9bbd"
+      },
+      {
+        "name": "game-play",
+        "title": "Chessboard",
+        "width": 4,
+        "file": "chess-game-play.html",
+        "headerColor": "#9f9bbd",
+        "workspace": "Game play"
       }
     ],
     "graphics": [
       {
-        "file": "index.html",
+        "file": "vs-player.html",
         "width": 1920,
         "height": 1080
       }
     ]
   },
   "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chessboardjs": "0.0.1"
+  }
 }
